@@ -51,7 +51,7 @@ export default function Home() {
                             </a>
 
                             <a
-                                href="https://twitter.com/malachirosario"
+                                href="https://instagram.com/malachi_rosario"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
