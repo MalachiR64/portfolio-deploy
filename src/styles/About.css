@@ -1,0 +1,275 @@
+
+.about-container {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: var(--light-gray);
+    min-height: calc(100vh - 60px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.about-container > h1 {
+    color: var(--navy-blue);
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+/* Common section styling */
+.intro-section,
+.interests-section,
+.background-section,
+.education-section {
+    background-color: var(--off-white);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid layout for sections */
+.sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Section headings */
+.background-section h2,
+.interests-section h2,
+.education-section h2 {
+    color: var(--navy-blue);
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Uniform text styling for all content */
+.intro-section p,
+.background-text p,
+.education-text p,
+.interests-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.intro-section p:last-child,
+.background-text p:last-child,
+.education-text p:last-child,
+.interests-section li:last-child {
+    margin-bottom: 0;
+}
+
+/* Make intro section span full width */
+.intro-section {
+    grid-column: 1 / -1;
+}
+
+/* Lists styling */
+.interests-section ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    margin-top: 0;
+}
+
+.interests-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Background Section - Vertical layout with photo below text */
+.background-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.background-text {
+    flex: 1;
+}
+
+.background-image {
+    align-self: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+.background-image img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--dark-gray);
+}
+
+/* Education Section */
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.education-text {
+    flex: 1;
+}
+
+/* Always keep logos horizontal */
+.education-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    margin-top: auto;
+}
+
+.education-image {
+    text-align: center;
+    flex: 0 1 auto;
+}
+
+.education-image img {
+    max-width: 120px;
+    height: auto;
+    width: 100%;
+}
+
+/* Medium screens */
+@media (max-width: 1100px) {
+    .sections-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+    .sections-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .education-images {
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0.5rem;
+    }
+
+    .about-container > h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .sections-grid {
+        gap: 1rem;
+        padding: 0.25rem;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    /* Make all sections wider on mobile */
+    .intro-section,
+    .interests-section,
+    .background-section,
+    .education-section {
+        padding: 1rem;
+        width: 100%;
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    /* Section headings for mobile */
+    .background-section h2,
+    .interests-section h2,
+    .education-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    /* Reduce text size on mobile */
+    .intro-section p,
+    .background-text p,
+    .education-text p,
+    .interests-section li {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+    }
+    
+    .interests-section ul {
+        padding-left: 1.25rem;
+    }
+    
+    .image-caption {
+        font-size: 0.8rem;
+    }
+    
+    .background-content,
+    .education-content {
+        gap: 1rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 0.5rem 0.25rem;
+    }
+    
+    .sections-grid {
+        gap: 0.75rem;
+        padding: 0.25rem;
+    }
+    
+    .education-images {
+        gap: 1rem;
+    }
+    
+    .education-image img {
+        max-width: 90px;
+    }
+    
+    /* Even smaller text */
+    .intro-section p,
+    .background-text p,
+    .education-text p,
+    .interests-section li {
+        font-size: 0.85rem;
+    }
+}
+
+/* Tiny screens */
+@media (max-width: 360px) {
+    .education-image img {
+        max-width: 75px;
+    }
+    
+    .intro-section,
+    .interests-section,
+    .background-section,
+    .education-section {
+        padding: 0.75rem;
+    }
+}

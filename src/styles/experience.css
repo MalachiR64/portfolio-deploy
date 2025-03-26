@@ -1,0 +1,26 @@
+.experience-container {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: var(--light-gray);
+    min-height: calc(100vh - 60px);
+    box-sizing: border-box;
+}
+
+.experience-container > h1 {
+    color: var(--navy-blue);
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.experience-container p {
+    margin: 0;
+    font-size: 0.8rem; /* Match the size of your card details text */
+    line-height: 1.4;  /* Improves spacing for readability */
+}
+
+@media (max-width: 480px) {
+    .experience-container > h1 {
+        font-size: 1.5rem;
+    }
+}

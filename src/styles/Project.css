@@ -1,0 +1,217 @@
+/* Project.css */
+.projects-container {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: var(--light-gray);
+    min-height: calc(100vh - 60px);
+    box-sizing: border-box;
+}
+
+.projects-container > h1 {
+    color: var(--navy-blue);
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 column for mobile */
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start; /* Important: Aligns items to the top */
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project-card {
+    background-color: var(--off-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Changed from 100% to auto */
+}
+
+.project-image-container {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image-placeholder {
+    width: 100%;
+    height: 160px;
+    background-color: var(--light-gray);
+}
+
+.project-card img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+}
+
+.project-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.title-container {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.project-title {
+    color: var(--navy-blue);
+    font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    max-width: 100%;
+}
+
+.project-title.expanded {
+    white-space: normal;
+    overflow: visible;
+}
+
+.description-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 120px; /* Minimum height for the description container */
+}
+
+.project-description {
+    color: var(--charcoal);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    position: relative;
+    overflow: hidden;
+    max-height: 4.2em; /* Height for 3 lines of text */
+    transition: max-height 0.3s ease;
+    margin: 0;
+}
+
+.project-description.expanded {
+    max-height: none;
+    padding-bottom: 0.5rem; 
+}
+
+.see-more {
+    color: var(--primary-red);
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    display: inline-block;
+}
+
+.project-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    gap: 0.75rem;
+    margin-top: 1rem;
+    min-height: 38px; /* Minimum height to ensure consistency even without buttons */
+}
+
+.empty-btn-space {
+    min-height: 38px; /* Match the default height of a button */
+}
+
+.project-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* Space between icon and text */
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.github-btn {
+    grid-column: 1; /* Always position in the first column */
+    background-color: var(--navy-blue);
+    color: var(--off-white);
+}
+
+.details-btn {
+    grid-column: 2; /* Always position in the second column */
+    background-color: var(--primary-red);
+    color: var(--off-white);
+}
+
+.see-all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-red);
+    color: var(--off-white);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.see-all-projects:hover,
+.project-btn:hover {
+    background-color: var(--gold);
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    .projects-container > h1 {
+        font-size: 1.5rem;
+    }
+    
+    .projects-grid {
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+    .project-buttons {
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for split screen */
+    }
+}

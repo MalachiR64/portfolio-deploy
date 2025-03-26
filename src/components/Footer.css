@@ -1,0 +1,75 @@
+.footer {
+    background-color:var(--navy-blue); /* Darker navy blue */
+    color: var(--off-white);
+    padding: 1rem;
+    text-align: center;
+    position: static;  /* Change from relative to static */
+    margin-top: auto;   /* Push footer to bottom */
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't extend width */
+    overflow-x: hidden; /* Prevents any content overflow */
+}
+
+.footer-links {
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: var(--off-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--gold); /* Dark red highlight on hover */
+
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.heart-icon {
+    color: var(--primary-red);
+    animation: pulse 1.5s infinite;
+}
+
+.react-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #61dafb;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        gap: 0.3rem;
+    }
+    
+    .copyright, .tech-stack {
+        font-size: 0.8rem;
+    }
+}
