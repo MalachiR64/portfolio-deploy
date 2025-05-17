@@ -58,15 +58,28 @@ const technical_expertise = [
 
 const certifications = [
     {
-        name: "Intel Project - Data Analysis for Sustainability",
-        image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/137285970",
-        link: "https://www.credential.net/3dba073f-f680-4a0a-9b9b-c79a6192ef2c#acc.tSb1dZQo"
+        name: "Illinois Institute of Technology - Coding for Data Track",
+        image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/143037922",
+        link: "https://www.credential.net/13664769-dee2-4f00-9a40-228f682d431e#acc.F20vXTQt"
+    },
+    {
+        name: "Python Specialist",
+        image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/142539204",
+        link: "https://www.credential.net/fc0c2775-80ef-4f26-aed5-498a90d2626e#acc.cR0DtKw4"
     },
     {
         name: "SQL Specialist",
         image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/136952754",
         link: "https://www.credential.net/26363f2e-d37e-4d47-a171-485cdafb117f#acc.NkAz86uH"
+    },
+    {
+        name: "Intercultural Skills",
+        image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/142923356",
+        link: "https://www.credential.net/22c04344-e604-4548-9702-f99ec6df3a3f#acc.DSE4lIYv"
     }
+    
+
+
 ];
 
 export default function Skill() {
