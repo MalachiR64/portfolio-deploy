@@ -3,10 +3,12 @@ import '../styles/Skill.css';
 import tableauIcon from '../assets/tableau-icon.svg';
 import githubIcon from '../assets/github-icon.svg';
 import bachIcon from '../assets/BashLogo.svg.png';
+import kafkaIcon from '../assets/kafaka-logo.png';
+import SnowflakeIcon from '../assets/snowflake.svg';
 import jnIcon from '../assets/Jupyter_logo.svg.png';
 
 
-
+//icon search https://github.com/devicons/devicon/tree/v2.16.0/icons
 const languages = [
     { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
     { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
@@ -23,36 +25,46 @@ const languages = [
 const frameworks_libraries = [
     { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
     { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+    { name: "Streamlit", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" },
     { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
     { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-plain.svg" },
     { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-plain.svg" },
+    { name: "React Native", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Scikit-Learn", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" },
+    { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
     { name: "Matplotlib", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-plain.svg" },
-    { name: "Sqlalchemy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+    { name: "SQLalchemy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+
 ];
 
 const tools_technologies = [
     { name: "Git", icon: "https://cdn-icons-png.flaticon.com/512/4494/4494748.png" },
     { name: "GitHub", icon: githubIcon },
-    { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-    { name: "Airflow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" },
     { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+    { name: "Snowflake", icon: SnowflakeIcon },
+    { name: "Airflow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" },
     { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+    { name: "Kafka", icon: kafkaIcon },
     { name: "Linux", icon: "https://cdn-icons-png.flaticon.com/512/6124/6124995.png" },
+    { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
     { name: "Tableau", icon: tableauIcon },
     { name: "Jupyter", icon: jnIcon },
     { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" }
+
 ];
 
 const technical_expertise = [
     { name: "Data Structures and Algorithms" },
     { name: "ETL & Data Pipelines" },
     { name: "Operating Systems" },
-    { name: "Probability & Statistics" },
+    { name: "Cloud Architecture" },
     { name: "Database Design & Management" },
+    { name: "Machine Learning" },
+    { name: "Probability & Statistics" },
     { name: "Data Mining & Analysis" },
     { name: "Linear Algebra" },
+    { name: "Networking" },
     { name: "Data Visualization" },
-    { name: "Cloud Architecture" },
     { name: "API Development & Integration" }
 ];
 

@@ -6,7 +6,7 @@ import { FaDownload } from 'react-icons/fa';
 
 export default function Resume() {
     const [resumeType, setResumeType] = useState('software');
-    const [fileFormat, setFileFormat] = useState('docx');
+    const [fileFormat, setFileFormat] = useState('pdf');
 
     const resumeFiles = {
         software: {

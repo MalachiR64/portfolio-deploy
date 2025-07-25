@@ -65,7 +65,7 @@ export default function Home() {
                 <div className="grid-item about-text">
                     <div className="about-content">
                         <div className="info-container">
-                            <span className="location">📍Chicago, IL</span>
+                            <span className="location">📍Atlanta, GA</span>
                             <div className="info-divider"></div>
                             <span className="education">
                                 <span className="education-emoji">🎓</span>
@@ -74,7 +74,7 @@ export default function Home() {
                         </div>
                         
                         <p>
-                            I'm currently a student and incoming summer intern at BlackRock. 
+                            I'm currently a Sofware Engineer Intern at BlackRock and Student. 
                             I'm a passionate problem solver who loves tackling complex challenges 
                             through software, data, and mathematics.
                         </p>

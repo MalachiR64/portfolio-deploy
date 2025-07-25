@@ -11,8 +11,8 @@ export default function About() {
             <div className="sections-grid">
                 <section className="intro-section">
                     <p>
-                        <strong>Hi, I'm Malachi Rosario</strong>, a Computer Science student at Illinois Institute of Technology 
-                        and an incoming summer intern at BlackRock. I'm a passionate problem solver who loves 
+                        <strong>Hi, I'm Malachi Rosario</strong>, a Sofware Engineer Intern at BlackRock
+                        and Computer Science student at Illinois Institute of Technology. I'm a passionate problem solver who loves 
                         tackling complex challenges through software, data, or mathematics. 
                     </p>
                     <p>
@@ -22,7 +22,7 @@ export default function About() {
                         technical domains. My experience spans <strong>data structures</strong> and {' '}
                         <strong>algorithms</strong>, <strong>database management</strong>, and building {' '}
                         <strong>data pipelines</strong> and <strong>full-stack applications</strong>. I've also 
-                        worked with <strong>cloud computing</strong>, <strong>data science</strong>, {' '}
+                        worked with <strong>cloud computing</strong>, <strong>machine learning</strong>, <strong>data science</strong>, {' '}
                         <strong>visualization</strong>, and <strong>automation scripting</strong>, delivering 
                         efficient and scalable solutions to complex problems.
                     </p>
@@ -52,7 +52,7 @@ export default function About() {
                         <li>Volunteering through my church</li>
                         <li>I have started to get into some sci-fi such as Red Rising and the Sun Eater Series</li>
                         <li>I enjoy playing sports like basketball, table tennis, and baseball </li>
-                        <li>Fan of the Cubs, Bears, Lakers, and Arsenal</li>
+                        <li>Fan of the Cubs, Bears, Lakers, and Arsenal </li>
                         <li>I love to run and bike</li>
                     </ul>
                 </section>
@@ -62,15 +62,15 @@ export default function About() {
                     <div className="education-content">
                         <div className="education-text">
                             <p>
-                                Some classes I have taken include Data Structures and Algorithms, Database 
-                                Organization, Systems Programming, Data Science, Linear Algebra, Probability and 
-                                Statistics, Object-Oriented Programming I, II, Discrete Structures, Graph Theory, 
+                                Some classes I have taken include Data Structures and Algorithms, Operating Systems, Database 
+                                Organization, Systems Programming, Data Mining, Probability and 
+                                Statistics, Linear Algebra, Object-Oriented Programming I, II, Data Science, Discrete Structures, Graph Theory, and 
                                 Calculus 1, 2, and 3.
                             </p>
                             <p>
                                 Outside of my classes, I have been a TA for Data Structures and Algorithms and 
                                 Object-Oriented Programming. I have enjoyed my time as a TA helping students, and 
-                                I have seen much improvement in my communication skills. I am also a part of Pi 
+                                I have seen much improvement in my communication skills. I am also a brother of Pi 
                                 Kappa Phi and have served as the risk manager. I am also a part of SHPE, Cru, and ACM.
                             </p>
                         </div>

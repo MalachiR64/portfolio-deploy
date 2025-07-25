@@ -7,7 +7,9 @@ import compilerImage from '../assets/compiler-image.png';
 import pipelineImage from '../assets/blobstorage.png';
 import tinderCloneImage from '../assets/TinderCloneDesign.png';
 import websiteBlocker from '../assets/website-blocker.jpg';
-import jnIcon from '../assets/Jupyter_logo.svg.png';
+import ETLPipline from '../assets/System-Architechure-Stock-ETL.png';
+import LeakLockImamge from '../assets/LeakLock.png';
+import PitchPridictor from '../assets/pitch-predictor.png';
 export default function Projects() {
     const [expandedCards, setExpandedCards] = useState(new Set());
     const [expandedTitles, setExpandedTitles] = useState(new Set());
@@ -49,21 +51,41 @@ export default function Projects() {
     );
 
     const projects = [
-        {
-            id: 1,
-            title: "ETL Data Pipeline for Stock Market",
-            image: pipelineImage,
-            description: "Used Python, Airflow, and Azure to Develop an Extract, Transform, Load (ETL) pipeline to collect, process, and analyze stock market data, focusing on S&P 500 companies. The system retrieves financial data, processes it into a normalized structured format, and stores it in Azure Blob Storage and an SQL database for real-time updates and analysis by using JSON and CSV files. Used airflow to periodically update the prices and market cap of the stocks.",
-            github: "https://github.com/MalachiR64/StockPriceDataPipeline",
+        
+         {
+            id: 7,
+            title: "S&P 500 Stock ETL Pipeline and Dashboard",
+            image: ETLPipline,
+            description: "Used Python, Airflow, and Azure to develop an end-to-end ETL pipeline and dashboard for tracking real-time data on S&P 500 companies. The system extracts financial data from Yahoo Finance, then processes, Transform, and stores it in Azure Blob Storage and an Azure SQL database. Airflow automates hourly updates to stock prices and monthly refreshes of company and market data. A Streamlit dashboard allows users to explore market trends, filter by sector, and visualize historical performance. The entire system is containerized using Docker for easy deployment.",
+            github: "https://github.com/MalachiR64/StockPriceDataPipelineAndDashboard",
+            detailsText: "View",
+            details: "https://malachir64-stockpricedatapipelineanddashboard-dashboard-xvtll9.streamlit.app/",
             
         },
         {
-            id: 2,
+            id: 6,
+            title: "Real-Time Pitch Predictor Engine",
+            image: PitchPridictor,
+            description: "Developed a real-time pitch prediction engine using Python, Kafka, and Streamlit to predict pitches as they happen. The system streams individual pitches through Apache Kafka topics, applies a trained XGBoost model to predict pitch types (e.g., Fastball, Slider, Curve), and displays results in an interactive Streamlit dashboard. Utilized the MLB StatsAPI to fetch historical and live game data, applied one-hot encoding for preprocessing, and used joblib for model serialization. The dashboard enables users to navigate pitch sequences and view predictions as they are streamed live.",
+            github: "https://github.com/MalachiR64/Pitch-Prediction-Engine",
+        },
+        {
+            id: 5,
+            title: "Leak Lock",
+            image: LeakLockImamge,
+            description: "Leak Lock is a Chrome extension that blocks emails from being sent if they contain sensitive information, such as credit card numbers or Social Security numbers. It scans Gmail content in real time to prevent users from accidentally leaking private data.",
+            github: "https://github.com/MalachiR64/data-leak-preventor",
+            detailsText: "Video",
+            details: "https://www.loom.com/share/9467bbb2b5354a84a0f722077f6cdef1?sid=836e1d10-3062-44ec-be21-a120b392c390"
+        },
+        {
+            id: 4,
             title: "Tinder Clone",
             image: tinderCloneImage,
-            description: "Developed a full-stack Tinder clone web app for a Database Organization class project using React, FastAPI, and MySQL. Configured a FastAPI backend with Pydantic SQL models for efficient database interactions and to connect to a React frontend through REST APIs. Helped design an interactive UI and implemented functionality and web-based cookies.",
+            description: "Built a full-stack CRUD Tinder clone web application using React, FastAPI, and MySQL as part of a Database Organization class project. Configured the FastAPI backend with SQLAlchemy and Pydantic models to enable seamless database interactions. Designed and implemented REST APIs to support user creation, swiping logic, and match management.",
             github: "https://github.com/MalachiR64/TinderAppClone",
         },
+,
         {
             id: 3,
             title: "Intel Project-Data Analysis for Sustainability",
@@ -72,33 +94,20 @@ export default function Projects() {
   
         },
         {
-            id: 4,
+            id: 2,
+            title: "OCaml Compiler",
+            image: compilerImage,
+            description: "A simple compiler for an ML-like functional language, implemented in OCaml as a class project. This project includes a lexer, parser, type checker, and interpreter, demonstrating key compiler construction techniques.",
+            github: "https://github.com/MalachiR64/OCaml-Compiler",
+        },
+        {
+            id: 1,
             title: "Website Blocker Python Script",
             image: websiteBlocker,
             description: "Used Python to block websites by modifying the system's host file redirecting the website to the local loopback address. This script enables users to control the duration of a website being blocked, offering temporary and permanent blocking.",
             github: "https://github.com/MalachiR64/Python-scripts-and-automations/tree/main/WebsiteBlocker",
-        },
-        {
-            id: 5,
-            title: "OCaml Compiler",
-            image: compilerImage,
-            description: "A simple compiler for an ML-like functional language, implemented in OCaml. This project includes a lexer, parser, type checker, and interpreter, demonstrating key compiler construction techniques.",
-            github: "https://github.com/MalachiR64/OCaml-Compiler",
-        },
-        {
-            id: 6,
-            title: "Death penalty and murder rates",
-            description: "Utilized data science libraries (Pandas, NumPy, and Matplotlib). Analyzed and visualized murder rates and death penalty data Applied random sampling and null hypothesis for meaningful insights.",
-            image: jnIcon,
-            github: "https://github.com/MalachiR64/Data-Science-151-Project-/blob/main/project_1sthalf.ipynb"
-        },
-        {
-            id: 7,
-            title: "Budgeting App: M1 Finance P33 Chicago ",
-            image: p33Logo,
-            description: "Collaborated with professionals from M1 Finance on designing, developing, and implementing a budgeting application using Figma and React."
-
         }
+       
     ];
 
     return (
@@ -155,8 +164,10 @@ export default function Projects() {
                                     <Link 
                                         to={project.details} 
                                         className="project-btn details-btn"
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
                                     >
-                                        Learn More
+                                        {project.detailsText} 
                                     </Link>
                                 ) : <div className="empty-btn-space"></div>}
                             </div>
