@@ -2,6 +2,7 @@ import React from 'react';
 import { Chrono } from "react-chrono";
 import '../styles/experience.css';
 import iitLogo from '../assets/iit-logo.png';
+import internphoto from '../assets/internphoto.png';
 import treevahPhoto from '../assets/treevah-photo.jpg'; 
 import treevahLogo from '../assets/treevah-logo.jpg'; 
 import exelonLogo from '../assets/exelon-logo.jpg';
@@ -12,11 +13,16 @@ import BlackRockLogo from '../assets/blackrock-logo.png';
 export default function Experience() {
     const items = [
         {
-            title: "06/2025 - Current",
+            title: "06/2025 - 08/2025",
             cardTitle: "💻 Software Engineer Intern",
             cardSubtitle: "BlackRock, Atlanta, GA",
             cardDetailedText: "Developed a full-stack mobile application using Python, FastAPI, and React Native to enable clients and internal users to interact with Snowflake-hosted financial data on mobile devices. Engineered a real-time query and filtering system that caches and flattens normalized tables across any database schema. Designed a stock lifecycle visualization tool to display historical trends and key performance metrics across various investment stages.",
-
+            media: {
+                type: "IMAGE",
+                source: {
+                    url: internphoto
+                }
+            }
         },
         {
             title: "08/2024 – 12/2024",
