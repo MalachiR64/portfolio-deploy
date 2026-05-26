@@ -19,6 +19,18 @@
     line-height: 1.4;  /* Improves spacing for readability */
 }
 
+.timeline-container {
+  height: auto;
+  overflow: visible;
+}
+
+.timeline-container [class*="chrono"] {
+  overflow: visible !important;
+}
+
+.timeline-container * {
+  overscroll-behavior: auto !important;
+}
 @media (max-width: 480px) {
     .experience-container > h1 {
         font-size: 1.5rem;

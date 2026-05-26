@@ -69,7 +69,7 @@ export default function Home() {
                             <div className="info-divider"></div>
                             <span className="education">
                                 <span className="education-emoji">🎓</span>
-                                <span className="education-text">Illinois Institute Of Technology, BS, Computer Science May 2026</span>
+                                <span className="education-text">Illinois Institute Of Technology, BS, Computer Science </span>
                             </span>
                         </div>
                         

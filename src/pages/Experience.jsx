@@ -12,6 +12,19 @@ import iitSkyline from '../assets/iit-skyline.webp';
 import BlackRockLogo from '../assets/blackrock-logo.png';
 export default function Experience() {
     const items = [
+                {
+            title: "Graduated College 05/2026",
+            cardTitle: "🎓 Illinois Institute of Technology",
+            cardSubtitle: "Bachelor of Science in Computer Science | Specialization: Data Science",
+            cardDetailedText:`Relevant Classwork: Data Structures and Algorithms | Operating Systems | Database Organization | Systems Programming | Parallel and Distributed Computing | Data Mining | Stochastic Processes | Data Science | Artificial Intelligence | Probability and Statistics | Linear Algebra | Object-Oriented Programming I, II  | Data Science | Discrete Structures | Graph Theory | Calculus 1, 2, and 3
+            Activities: Pi Kappa Phi, SHPE, Exelon Summer Institute, Cru, and ACM`.split('\n').map((line, index) => <p key={index}>{line}</p>),
+            media: {
+                type: "IMAGE",
+                source: {
+                    url: iitSkyline
+                }
+            }
+        }, 
         {
             title: "06/2025 - 08/2025",
             cardTitle: "💻 Software Engineer Intern",
@@ -58,11 +71,11 @@ export default function Experience() {
 
         },
         {
-            title: "08/2022 – Current",
+            title: "Started College 08/2022",
             cardTitle: "🎓 Illinois Institute of Technology",
-            cardSubtitle: "Bachelor of Science in Computer Science | Expected Graduation 05/2026",
-            cardDetailedText:`Activities: Pi Kappa Phi, SHPE, Exelon Summer Institute, Cru, and ACM
-                Relevant Classwork: Data Structures and Algorithms | Operating Systems | Database Organization |Systems Programming | Data Mining | Probability and Statistics | Linear Algebra | Object-Oriented Programming I, II | Data Science | Discrete Structures | Graph Theory | Calculus 1, 2, and 3`.split('\n').map((line, index) => <p key={index}>{line}</p>),
+            cardSubtitle: "Bachelor of Science in Computer Science | Specialization: Data Science",
+            cardDetailedText:`Relevant Classwork: Data Structures and Algorithms | Operating Systems | Database Organization | Systems Programming | Parallel and Distributed Computing | Data Mining | Stochastic Processes | Data Science | Artificial Intelligence | Probability and Statistics | Linear Algebra | Object-Oriented Programming I, II  | Data Science | Discrete Structures | Graph Theory | Calculus 1, 2, and 3
+            Activities: Pi Kappa Phi, SHPE, Exelon Summer Institute, Cru, and ACM`.split('\n').map((line, index) => <p key={index}>{line}</p>),
             media: {
                 type: "IMAGE",
                 source: {
@@ -75,6 +88,12 @@ export default function Experience() {
             cardTitle: "🎓 Glenbrook South High School",
             cardSubtitle: "High School Diploma",
             cardDetailedText:`Activities: Baseball, Table Tenis and Engineering Club`,
+            media: {
+                type: "IMAGE",
+                source: {
+                    url: gbsLogo
+                }
+            }        
         }           
     ];
 
@@ -106,13 +125,10 @@ export default function Experience() {
                     scrollable={{ scrollbar: true }}
                     disableInteraction={true}
                     enableOutline={true}
-                    flipLayout
-                    slideShow
                     readMore={true} 
                     slideItemDuration={4500}
                     disableToolbar={true}
-                    showAllCardsHorizontal={false}
-                    timelinePointShape="square"
+                    timelinePointShape="circle"
                     disableTimelinePoint={true}
                     timelinePointDimension={60}
                     mediaSettings={{
@@ -123,6 +139,7 @@ export default function Experience() {
 
 
                     <div className="chrono-icons">
+                        <img src={iitLogo} alt="IIT Logo" />
                         <img src={BlackRockLogo} alt="BlackRock Logo" />
                         <img src={iitLogoCoc} alt="IIT Logo" />
                         <img src={treevahLogo} alt="Treevah Logo" />
@@ -133,7 +150,7 @@ export default function Experience() {
                     </div>
 
                 </Chrono>
-            </div>
+            </div>    
         </div>
     );
 }
