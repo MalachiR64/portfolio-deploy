@@ -12,7 +12,7 @@ export default function About() {
                 <section className="intro-section">
                     <p>
                         <strong>Hi, I'm Malachi Rosario</strong>, a Sofware Engineer Intern at BlackRock
-                        and Computer Science student at Illinois Institute of Technology. I'm a passionate problem solver who loves 
+                        and recent B.S Computer Science Graduate at Illinois Institute of Technology. I'm a passionate problem solver who loves 
                         tackling complex challenges through software, data, or mathematics. 
                     </p>
                     <p>
