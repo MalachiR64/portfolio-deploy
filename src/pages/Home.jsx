@@ -74,7 +74,7 @@ export default function Home() {
                         </div>
                         
                         <p>
-                            I'm a previous Sofware Engineer Intern at BlackRock and Student. 
+                            I'm a previous Sofware Engineer Intern at BlackRock and recent graduate. 
                             I'm a passionate problem solver who loves tackling complex challenges 
                             through software, data, and mathematics.
                         </p>
