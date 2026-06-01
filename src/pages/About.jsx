@@ -62,10 +62,7 @@ export default function About() {
                     <div className="education-content">
                         <div className="education-text">
                             <p>
-                                Some classes I have taken include Data Structures and Algorithms, Operating Systems, Database 
-                                Organization, Systems Programming, Data Mining, Probability and 
-                                Statistics, Linear Algebra, Object-Oriented Programming I, II, Data Science, Discrete Structures, Graph Theory, and 
-                                Calculus 1, 2, and 3.
+                                Some classes I have taken include Data Structures and Algorithms, Operating Systems, Database Organization, Systems Programming, Parallel and Distributed Computing, Data Mining, Stochastic Processes, Data Science, Artificial Intelligence, Probability and Statistics, Linear Algebra, Object-Oriented Programming I and II, Discrete Structures, Graph Theory, and Calculus I, II, and III..
                             </p>
                             <p>
                                 Outside of my classes, I have been a TA for Data Structures and Algorithms and 

@@ -16,7 +16,7 @@ export default function Experience() {
             title: "Graduated College 05/2026",
             cardTitle: "🎓 Illinois Institute of Technology",
             cardSubtitle: "Bachelor of Science in Computer Science | Specialization: Data Science",
-            cardDetailedText:`Relevant Classwork: Data Structures and Algorithms | Operating Systems | Database Organization | Systems Programming | Parallel and Distributed Computing | Data Mining | Stochastic Processes | Data Science | Artificial Intelligence | Probability and Statistics | Linear Algebra | Object-Oriented Programming I, II  | Data Science | Discrete Structures | Graph Theory | Calculus 1, 2, and 3
+            cardDetailedText:`Relevant Classwork: Data Structures and Algorithms | Operating Systems | Database Organization | Systems Programming | Parallel and Distributed Computing | Data Mining | Stochastic Processes | Data Science | Artificial Intelligence | Probability and Statistics | Linear Algebra | Object-Oriented Programming I, II  | Data Science | Discrete Structures | Calculus 1, 2, and 3 | Graph Theory
             Activities: Pi Kappa Phi, SHPE, Exelon Summer Institute, Cru, and ACM`.split('\n').map((line, index) => <p key={index}>{line}</p>),
             media: {
                 type: "IMAGE",
@@ -74,7 +74,7 @@ export default function Experience() {
             title: "Started College 08/2022",
             cardTitle: "🎓 Illinois Institute of Technology",
             cardSubtitle: "Bachelor of Science in Computer Science | Specialization: Data Science",
-            cardDetailedText:`Relevant Classwork: Data Structures and Algorithms | Operating Systems | Database Organization | Systems Programming | Parallel and Distributed Computing | Data Mining | Stochastic Processes | Data Science | Artificial Intelligence | Probability and Statistics | Linear Algebra | Object-Oriented Programming I, II  | Data Science | Discrete Structures | Graph Theory | Calculus 1, 2, and 3
+            cardDetailedText:`Relevant Classwork: Data Structures and Algorithms | Operating Systems | Database Organization | Systems Programming | Parallel and Distributed Computing | Data Mining | Stochastic Processes | Data Science | Artificial Intelligence | Probability and Statistics | Linear Algebra | Object-Oriented Programming I, II  | Data Science | Discrete Structures | Calculus 1, 2, and 3 | Graph Theory 
             Activities: Pi Kappa Phi, SHPE, Exelon Summer Institute, Cru, and ACM`.split('\n').map((line, index) => <p key={index}>{line}</p>),
             media: {
                 type: "IMAGE",

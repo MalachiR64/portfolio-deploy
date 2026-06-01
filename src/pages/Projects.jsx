@@ -10,6 +10,7 @@ import websiteBlocker from '../assets/website-blocker.jpg';
 import ETLPipline from '../assets/System-Architechure-Stock-ETL.png';
 import LeakLockImamge from '../assets/LeakLock.png';
 import PitchPridictor from '../assets/pitch-predictor.png';
+import DistributedStockImage from '../assets/system-architecture-distrib-stck.png'
 export default function Projects() {
     const [expandedCards, setExpandedCards] = useState(new Set());
     const [expandedTitles, setExpandedTitles] = useState(new Set());
@@ -52,6 +53,16 @@ export default function Projects() {
 
     const projects = [
         
+         {
+            id: 8,
+            title: "Distributed Stock Trading System",
+            image: DistributedStockImage,
+            description: "Used C, POSIX threads, and TCP sockets to build a distributed real-time trading pipeline across 7 physical nodes on the FABRIC research testbed. A producer node continuously streams stock price events to a central consumer coordinator, which dispatches work across up to 5 worker nodes using a multithreaded producer-consumer architecture with mutex-synchronized queuing and round-robin scheduling. Worker nodes process incoming events and return results to the consumer, which applies a rolling 20-price moving average strategy to generate buy, sell, and hold signals. The system demonstrates horizontal scalability by increasing worker count reducing dropped events and improving throughput under high-frequency data streams.",
+            github: "https://github.com/MalachiR64/Distributed-Stock-Trading-System",
+            detailsText: "Video",
+            details: "https://youtu.be/q8WqPaGBZ2U",
+            
+        },
          {
             id: 7,
             title: "S&P 500 Stock ETL Pipeline and Dashboard",

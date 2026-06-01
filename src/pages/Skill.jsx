@@ -6,7 +6,7 @@ import bachIcon from '../assets/BashLogo.svg.png';
 import kafkaIcon from '../assets/kafaka-logo.png';
 import SnowflakeIcon from '../assets/snowflake.svg';
 import jnIcon from '../assets/Jupyter_logo.svg.png';
-
+import DeanslistIcon from '../assets/CoC Deans List Digital Badge 02-26.png'
 
 //icon search https://github.com/devicons/devicon/tree/v2.16.0/icons
 const languages = [
@@ -59,10 +59,13 @@ const technical_expertise = [
     { name: "Data Structures and Algorithms" },
     { name: "ETL & Data Pipelines" },
     { name: "Operating Systems" },
+    { name: "Distributed Systems" },
+    { name: "Concurrent & Parallel Programming" },
     { name: "Cloud Architecture" },
     { name: "Database Design & Management" },
     { name: "Machine Learning" },
     { name: "Probability & Statistics" },
+    { name: "Stochastic Calculus" },
     { name: "Data Mining & Analysis" },
     { name: "Linear Algebra" },
     { name: "Networking" },
@@ -71,6 +74,10 @@ const technical_expertise = [
 ];
 
 const certifications = [
+    {
+        name: "Multiple-Time Dean's List Recipient",
+        image: DeanslistIcon,
+    },
     {
         name: "Illinois Institute of Technology - Coding for Data Track",
         image: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/143037922",
