@@ -1,6 +1,7 @@
 .skills-page {
     padding: 0.5rem;
     width: 100%;
+    min-height: calc(100vh - 60px);
     background-color: var(--light-gray);
     overflow-x: hidden;
     box-sizing: border-box;

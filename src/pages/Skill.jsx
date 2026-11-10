@@ -7,6 +7,10 @@ import kafkaIcon from '../assets/kafaka-logo.png';
 import SnowflakeIcon from '../assets/snowflake.svg';
 import jnIcon from '../assets/Jupyter_logo.svg.png';
 import DeanslistIcon from '../assets/CoC Deans List Digital Badge 02-26.png'
+import iitDiploma from '../assets/iit-diploma.png'
+import devinIcon from '../assets/devin-icon.png'
+import openAIIcon from '../assets/openai-icon.svg'
+import dbtIcon from '../assets/Dbt-icon.svg'
 
 //icon search https://github.com/devicons/devicon/tree/v2.16.0/icons
 const languages = [
@@ -45,14 +49,17 @@ const tools_technologies = [
     { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
     { name: "Snowflake", icon: SnowflakeIcon },
     { name: "Airflow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" },
+    { name: "dbt", icon: dbtIcon },
     { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
     { name: "Kafka", icon: kafkaIcon },
     { name: "Linux", icon: "https://cdn-icons-png.flaticon.com/512/6124/6124995.png" },
     { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
     { name: "Tableau", icon: tableauIcon },
     { name: "Jupyter", icon: jnIcon },
-    { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" }
-
+    { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+    { name: "Claude", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/claude/claude-original.svg" },
+    { name: "Codex", icon: openAIIcon },
+    { name: "Devin", icon: devinIcon },
 ];
 
 const technical_expertise = [
@@ -74,6 +81,11 @@ const technical_expertise = [
 ];
 
 const certifications = [
+    {
+        name: "Bachelor of Science Computer Science",
+        image: iitDiploma,
+        link: "https://www.parchment.com/lp/award/44da5989-bc95-4e33-864f-05e066d5826b"
+    },
     {
         name: "Multiple-Time Dean's List Recipient",
         image: DeanslistIcon,
@@ -129,7 +141,7 @@ export default function Skill() {
                 </div>
 
                 <div className="skills-section">
-                    <h2>Certifications</h2>
+                    <h2>Credentials</h2>
                     <div className="certifications-grid">
                         {certifications.map((cert, index) => (
                             <a key={index} href={cert.link} target="_blank" rel="noopener noreferrer" className="certification-card">

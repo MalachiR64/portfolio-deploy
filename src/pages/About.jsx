@@ -11,7 +11,7 @@ export default function About() {
             <div className="sections-grid">
                 <section className="intro-section">
                     <p>
-                        <strong>Hi, I'm Malachi Rosario</strong>, a Sofware Engineer Intern at BlackRock
+                        <strong>Hi, I'm Malachi Rosario</strong>, a Sofware Engineer at BlackRock
                         and recent B.S Computer Science Graduate at Illinois Institute of Technology. I'm a passionate problem solver who loves 
                         tackling complex challenges through software, data, or mathematics. 
                     </p>

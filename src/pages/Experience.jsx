@@ -8,11 +8,22 @@ import treevahLogo from '../assets/treevah-logo.jpg';
 import exelonLogo from '../assets/exelon-logo.jpg';
 import gbsLogo from '../assets/gbs-logo.jpg';
 import iitLogoCoc from '../assets/iit-logo-coc.jpg';
+import gradphoto from '../assets/gradphoto.JPG';
+import dsaBanner from '../assets/dsa-banner.jpg';
+import oopBanner from '../assets/opp-banner.webp';
+import calcBanner from '../assets/calc-banner.jpg';
 import iitSkyline from '../assets/iit-skyline.webp';
+
 import BlackRockLogo from '../assets/blackrock-logo.png';
 export default function Experience() {
     const items = [
-                {
+        {
+            title: "08/2026 - Current",
+            cardTitle: "💻 Software Engineer",
+            cardSubtitle: "BlackRock Atlanta, GA",
+            cardDetailedText: "",
+        },                
+        {
             title: "Graduated College 05/2026",
             cardTitle: "🎓 Illinois Institute of Technology",
             cardSubtitle: "Bachelor of Science in Computer Science | Specialization: Data Science",
@@ -21,14 +32,14 @@ export default function Experience() {
             media: {
                 type: "IMAGE",
                 source: {
-                    url: iitSkyline
+                    url: gradphoto
                 }
             }
         }, 
         {
             title: "06/2025 - 08/2025",
             cardTitle: "💻 Software Engineer Intern",
-            cardSubtitle: "BlackRock, Atlanta, GA",
+            cardSubtitle: "BlackRock Atlanta, GA",
             cardDetailedText: "Developed a full-stack mobile application using Python, FastAPI, and React Native to enable clients and internal users to interact with Snowflake-hosted financial data on mobile devices. Engineered a real-time query and filtering system that caches and flattens normalized tables across any database schema. Designed a stock lifecycle visualization tool to display historical trends and key performance metrics across various investment stages.",
             media: {
                 type: "IMAGE",
@@ -40,14 +51,19 @@ export default function Experience() {
         {
             title: "08/2024 – 12/2024",
             cardTitle: "✏️ Teaching Assistant (TA): CS 331 Data Structures and Algorithms",
-            cardSubtitle: "Illinois Institute of Technology, Chicago, IL",
+            cardSubtitle: "Illinois Institute of Technology Chicago, IL",
             cardDetailedText: "Taught data structures and algorithms in Python to improve time complexity and code optimization, including hash maps, stacks, queues, trees, graphs, and algorithms like binary search, divide-and-conquer, and greedy.",
-
+            media: {
+                type: "IMAGE",
+                source: {
+                    url: dsaBanner
+                }
+            }
         },
         {
             title: "05/2024 – 08/2024",
             cardTitle: "💻 Full Stack Software Engineer Intern",
-            cardSubtitle: "Treevah, Chicago, IL",
+            cardSubtitle: "Treevah Chicago, IL",
             cardDetailedText: "Team lead for the demo which raised over $5000 from investors such as Microsoft for Startup. I also provided the database and infrastructure design for this tech startup for deployment in Microsoft Azure. I spearheaded the functionality of an online file management system using JavaScript and no-code-based software to build a working prototype.",
             media: {
                 type: "IMAGE",
@@ -59,16 +75,26 @@ export default function Experience() {
         {
             title: "01/2024 – 05/2024",
             cardTitle: "✏️ Teaching Assistant (TA): CS 116 Object-Oriented Programming II",
-            cardSubtitle: "Illinois Institute of Technology, Chicago, IL",
+            cardSubtitle: "Illinois Institute of Technology Chicago, IL",
             cardDetailedText: "Taught lessons on data structures, algorithms, recursions, object-oriented programming(OOP), and APIs in Java. Guided students, led labs, and offered office hours for Object-Oriented Programming II.",
-
+            media: {
+                type: "IMAGE",
+                source: {
+                    url: oopBanner
+                }
+            }
         },
         {
             title: "07/2023 – 08/2023",
             cardTitle: "✏️ Calculus 1 Teaching Assistant",
-            cardSubtitle: "Exelon Summer Institute, Chicago, IL",
+            cardSubtitle: "Exelon Summer Institute Chicago, IL",
             cardDetailedText: "Taught and prepared lessons in Calculus 1 during this exclusive bridge program for incoming freshmen. Handled administrative tasks including planning out lessons, organization, and scheduling",
-
+            media: {
+                type: "IMAGE",
+                source: {
+                    url: calcBanner
+                }
+            }
         },
         {
             title: "Started College 08/2022",
@@ -139,6 +165,7 @@ export default function Experience() {
 
 
                     <div className="chrono-icons">
+                        <img src={BlackRockLogo} alt="BlackRock Logo" />
                         <img src={iitLogo} alt="IIT Logo" />
                         <img src={BlackRockLogo} alt="BlackRock Logo" />
                         <img src={iitLogoCoc} alt="IIT Logo" />

@@ -65,16 +65,16 @@ export default function Home() {
                 <div className="grid-item about-text">
                     <div className="about-content">
                         <div className="info-container">
-                            <span className="location">📍Chicago, IL</span>
+                            <span className="location">📍Atlanta, GA</span>
                             <div className="info-divider"></div>
                             <span className="education">
                                 <span className="education-emoji">🎓</span>
-                                <span className="education-text">Illinois Institute Of Technology, BS, Computer Science </span>
+                                <span className="education-text">Illinois Institute of Technology, BS, Computer Science May 2026</span>
                             </span>
                         </div>
                         
                         <p>
-                            I'm a previous Sofware Engineer Intern at BlackRock and recent graduate. 
+                            I'm a Sofware Engineer at BlackRock and recent graduate. 
                             I'm a passionate problem solver who loves tackling complex challenges 
                             through software, data, and mathematics.
                         </p>

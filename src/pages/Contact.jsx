@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaInstagram, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
@@ -56,6 +56,9 @@ export default function Contact() {
                 <a href="https://instagram.com/malachi_rosario" target="_blank" rel="noopener noreferrer" className="social-link">
                     <FaInstagram />
                 </a>
+                <a href="https://github.com/MalachiR64" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <FaGithub />
+                </a>
                 <a href="https://twitter.com/malachirosario" target="_blank" rel="noopener noreferrer" className="social-link">
                     <FaXTwitter />
                 </a>
@@ -68,7 +71,7 @@ export default function Contact() {
                         type="text"
                         id="user_name"
                         name="user_name"
-                        required
+                        
                     />
                 </div>
 
@@ -78,12 +81,12 @@ export default function Contact() {
                         type="email"
                         id="user_email"
                         name="user_email"
-                        required
+                        
                     />
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="message">Message</label>
+                    <label htmlFor="message">Message<span className="required-marker" aria-hidden="true">*</span></label>
                     <textarea
                         id="message"
                         name="message"

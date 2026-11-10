@@ -153,3 +153,7 @@
         padding: 0.6rem;
     }
 }
+.contact-container .required-marker {
+    color: var(--primary-red);
+}
+

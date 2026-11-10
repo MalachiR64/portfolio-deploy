@@ -36,3 +36,10 @@
         font-size: 1.5rem;
     }
 }
+
+.timeline-container .show-more:hover,
+.timeline-container .show-more:focus-visible {
+  color: var(--gold);
+  outline: none;
+  text-decoration: none;
+}

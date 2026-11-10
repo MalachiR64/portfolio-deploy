@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/rose-lion-prototype6.png';
+import hoverLogo from '../assets/rose-lion-gold.png';
 import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isLogoHovered, setIsLogoHovered] = useState(false);
     const navRef = useRef(null);
     const menuRef = useRef(null);
 
@@ -37,7 +39,15 @@ export default function Navbar() {
             
             <div className="logo-container">
                 <NavLink to="/" id="homescreen">
-                    <img id="logo" alt="rose lion" src={logo} />
+                    <img
+                        id="logo"
+                        alt="rose lion"
+                        src={isLogoHovered ? hoverLogo : logo}
+                        onMouseEnter={() => setIsLogoHovered(true)}
+                        onMouseLeave={() => setIsLogoHovered(false)}
+                        onFocus={() => setIsLogoHovered(true)}
+                        onBlur={() => setIsLogoHovered(false)}
+                    />
                 </NavLink>
             </div>
 

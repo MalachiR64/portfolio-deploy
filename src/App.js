@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import PageImageGate from './components/PageImageGate';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Experience from './pages/Experience';
@@ -18,18 +19,27 @@ export default function App() {
             <div className="app-container">
                 <Navbar />
                 <div className="content">
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/experience" element={<Experience />} />
-                        <Route path="/projects" element={<Projects />} />
-                        <Route path="/skills" element={<Skills />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/resume" element={<Resume />} />
-                    </Routes>
+                    <PageContent />
                 </div>
                 <Footer />
             </div>
         </Router>
+    );
+}
+
+function PageContent() {
+    const location = useLocation();
+    return (
+        <PageImageGate key={location.key}>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/resume" element={<Resume />} />
+            </Routes>
+        </PageImageGate>
     );
 }

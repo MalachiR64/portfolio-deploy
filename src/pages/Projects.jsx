@@ -128,9 +128,7 @@ export default function Projects() {
                 {projects.map((project) => (
                     <div key={project.id} className="project-card">
                         {project.image ? (
-                            <div className="project-image-container">
-                                <img src={project.image} alt={project.title} />
-                            </div>
+                            <ProjectImage image={project.image} title={project.title} />
                         ) : (
                             <div className="project-image-placeholder"></div>
                         )}
@@ -196,5 +194,36 @@ export default function Projects() {
                 See All My Projects
             </a>
         </div>
+    );
+}
+
+function ProjectImage({ image, title }) {
+    const [open, setOpen] = useState(false);
+
+    return (
+        <button
+            type="button"
+            className="project-image-container project-image-trigger"
+            aria-label={`Enlarge image for ${title}`}
+            aria-expanded={open}
+            onBlur={() => setOpen(false)}
+            onClick={() => setOpen((value) => !value)}
+            onKeyDown={(event) => {
+                if (event.key === 'Escape') {
+                    event.preventDefault();
+                    setOpen(false);
+                }
+            }}
+        >
+            <img src={image} alt={title} />
+            {open && (
+                <span className="project-image-preview" aria-hidden="true">
+                    <span className="project-image-preview-panel">
+                        <img src={image} alt="" />
+                        <span>{title}</span>
+                    </span>
+                </span>
+            )}
+        </button>
     );
 }
